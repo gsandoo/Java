@@ -7,7 +7,7 @@ public class TypeConversionTest {
 		
 		// 강제 캐스팅 하면 이런 오류가 난다.
 //		int iNum = 255;
-//		byte bNum = (byte)iNum  ;
+//		byte bNum = (byte)iNum  ; int 4바이트를 byte 강제 변환하면 오류가 난다
 //		System.out.println(bNum);//-1
 		
 		
