@@ -2,6 +2,8 @@ package ch10;
 
 public class BirthDay {
 	
+	
+	// 조건제어 지시자에 대해서
 	private int day;
 	private int month ;
 	private int year ;
