@@ -1,7 +1,11 @@
 package ch16;
 
+
+// static 변수 사용법
 public class Employee {
 	
+	
+	// static 은 여러 인스턴스가 공유하는 하나의 기준 값
 	private static int serialNum = 1000;
 	
 	private int employeeID;
