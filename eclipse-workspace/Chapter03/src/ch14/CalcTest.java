@@ -14,12 +14,14 @@ public class CalcTest {
 		System.out.println(calc.multiply(num1, num2));
 	
 		
-		// 재정의 된 description
+		// 재정의 된 description default
 		calc.description();
 		
 		
 		int[] arr = {1,2,3,4,5};
 		
+		
+		// static 은 인스턴스 생성 안해도 바로 부를 수 있음.
 		System.out.println(Calc.total(arr));
 	
 	}
