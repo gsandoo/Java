@@ -4,7 +4,7 @@ public class MyLinkedList {
 	
 	// 링크드 리스트는 빼고 넣을때 그 위치의 pre노드를 알아야한다.
 	private MyListNode head; // 맨 첫 노드 head.
-	int count;
+	int count; // 노드 개수 실제 인덱스는 count -1 
 	
 	public MyLinkedList()
 	{
@@ -20,7 +20,7 @@ public class MyLinkedList {
 			newNode = new MyListNode(data);
 			head = newNode;
 		}
-		// 헤드 노드가 null 이 아닐때 newNode는 데이터 , temp 는 헤드, 맨뒤로가서 데이터 add 하기
+		// 헤드 노드가 null 이 아닐때 newNode는 데이터  , temp 는 헤드, 맨뒤로가서 데이터 add 하기
 		else{
 			newNode = new MyListNode(data);
 			MyListNode temp = head;
