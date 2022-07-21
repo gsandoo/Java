@@ -18,15 +18,15 @@ public class MemberListTest {
 		memberList.addMember(memberKim);
 		memberList.addMember(memberSon);
 		
-		memberList.showNumber();
+	
 		
 		memberList.removeMember(memberKim.getMemberID());
 		
 		memberList.showNumber();
 		
-		memberList.addMember(memberKim);
-		
-		memberList.showNumber();
+//		memberList.addMember(memberKim);
+//		
+//		memberList.showNumber();
 	}
 
 }
