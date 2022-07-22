@@ -1,22 +1,23 @@
-package ch10;
+package ch12;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 
-public class MemberList {
+public class MemberHashSet {
 	
-	ArrayList<Member> arrayList = new ArrayList<>();
+	private HashSet<Member> hashSet;
 	
-	public MemberList() {
-		arrayList = new ArrayList<>();
+	public MemberHashSet() {
+		hashSet = new HashSet<>();
 	}
 	
-	public MemberList(int size) {
-		arrayList =new ArrayList<>(size);
+	public MemberHashSet(int size) {
+		hashSet =new HashSet<>(size);
 	}
 	
 	public void addMember(Member member) {
-		arrayList.add(member);
+		hashSet.add(member);
 	}
 	
 	public boolean removeMember(int memberID) {
@@ -36,7 +37,7 @@ public class MemberList {
 		
 		// 이터레이터는 컬렉션에 포함된 요소를 하나씩 순회하며 읽을 수 있음
 		
-		Iterator<Member> ir = arrayList.iterator();
+		Iterator<Member> ir = hashSet.iterator();
 		
 		// hasNext는 다음요소가 있는지 확인하는 메서드. 커서는 배열 맨 앞에 있어서 첫 요소부터 읽음
 		while (ir.hasNext()) {
@@ -45,7 +46,7 @@ public class MemberList {
 			int tempId = member.getMemberID();
 			
 			if(tempId == memberID) {
-				arrayList.remove(member);
+				hashSet.remove(member);
 				return true;
 			}
 			
@@ -55,7 +56,7 @@ public class MemberList {
 	
 	public void showNumber() {
 		
-		for(Member member : arrayList) {
+		for(Member member : hashSet) {
 			System.out.println(member);
 		}
 	}
