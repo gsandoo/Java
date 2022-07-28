@@ -14,6 +14,11 @@ public class ArrayListStreamTest {
 		sList.add("Pirerre");
 		sList.add("Alexandro");
 		
+		
+		//stream 은 자료의 대상과 관계없이 동일한 연산을 수행한다.
+//					재사용은 불가하다.
+				// 기존자료를 변경하지 않는다.
+				// 중간연산과 최종연산으로 구별한다.
 		Stream<String> stream = sList.stream();
 		
 		stream.forEach(s->System.out.println(s));
