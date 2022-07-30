@@ -1,4 +1,4 @@
-package ch07;
+package ch06;
 
 import java.util.Arrays;
 import java.util.function.BinaryOperator;
@@ -16,7 +16,9 @@ import java.util.function.BinaryOperator;
 	
 }
 
-
+// reduce  사용법
+ 
+// .reduce( 초기값 , 함수 )
 public class ReduceTest {
 
 	public static void main(String[] args) {
